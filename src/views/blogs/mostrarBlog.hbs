@@ -1,0 +1,76 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0" nonce="6CyIlxos"></script>
+    <div class="container-fluid">
+     <div style="height:400px; background-image: url(/img/logo3d.jpg);background-size:100%;background-repeat:no-repeat;" class="row"></div>
+       
+        
+	
+	
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-lg-10 offset-1">
+
+          <!-- Title -->
+          {{#if muestrablog}}
+    
+                    
+                           
+          <h1 class="mt-4">{{muestrablog.title}}</h1>
+
+          
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="card-img-top" src="{{muestrablog.image}}" alt="Card image cap">
+
+          <hr>
+          
+
+         {{{muestrablog.description}}}
+         
+          <hr>
+          <!-- Author -->
+          <p class="lead">
+            
+            Por Daniel Puerta
+            <br>
+            Desarrollador de Aplicaciones 
+          </p>
+          <!-- Date/Time -->
+          <p>{{muestrablog.createdAt}}</p>
+
+          <hr>
+
+          
+          {{/if}}
+
+          <!-- Comments Form -->
+         
+            <div class="fb-comments" data-href="http://localhost:3000/blogs/mostrar/5efd4effa800a32dd4069181" data-numposts="5" data-width=""></div>
+          
+          <br>
+          <br>
+          <br>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+     
+          
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!--footer-->
+
+     </div>

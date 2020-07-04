@@ -1,0 +1,52 @@
+<!-- SECCIÓN 1 -->
+    <div class="container-fluid padreSlider1">
+     
+     <!-- Elementos organizados -->
+      <div class="row flex-items-xs-right slider-1 flex-items-xs-middle" id="sec-1" style="width:100% !important;">
+        <div class="row col-md-5">
+          <div class="col-md-12 parrafo">
+          <center><h1>ItechPro</h1></center>
+          <center><h4>Encuentra recursos, proyectos, actividades y las últimas novedades en la robótica.</h4></center>
+          {{#if users}}
+          
+          <br>
+          <br>
+          <center><a class="myButton1">Bienvenidos</a></center>
+          
+          {{else}}
+          
+          <br><br>
+           <center><a href="/usuarios/inicio-sesion" class="myButton1">Iniciar Sesion</a>
+          <br>
+          <a href="/usuarios/registrar" class="myButton1">Registrarse</a></center>
+          {{/if}}
+          
+          </div>
+        </div>
+        {{>elementos}}
+      </div>
+      
+    <!-- Quienes somos -->
+  <nav class="navigation" id="mynav">
+
+    <section class="navigation__icon" id="mynavi">
+      <div class="cent">
+         <br><br>
+          <center><img src="/img/aboutus.png" width="110;"></center>
+      <center><input type="button" value="¿Quienes Somos?" class="mbtn1" id="mybtn"></center>
+      <br><br>
+      <div class="txt" id="mytxt">
+          <p>La innovación es lo que distingue a un líder de los demás <span style="font-size: 14px;">– Steve Jobs</span></p><br>
+          <p>Nuestros niños son la construcción del presente y la esperanza del futuro. En este espacio esperamos aportar un grano de arena al conocimiento y la enseñanza de las habilidades para siglo XXI</p>
+          <br>
+          <center><a href="" class="mbtn1">Contátanos</a>
+          <br>
+          <a href="" class="mbtn1">Donar</a></center>
+      </div>
+      </div>
+      
+    </section>
+  </nav>
+
+    </div>
+    <!-- FIN SECCIÓN -->

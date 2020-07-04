@@ -1,0 +1,48 @@
+<!-- SECCIÓN 2 -->
+<div class="container-fluid">
+    <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2" style="height:500px;">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+                <h1>Proyectos</h1>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+<div class="container" style="position:">
+    {{#each muestraTareas}}
+        <div class="well " style="background:#F5F5F5;">
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placekitten.com/150/150">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">{{title}}</h4>
+
+                    <p>{{description}}</p>
+                    <ul class="list-inline list-unstyled">
+                        <li><span><i class="glyphicon glyphicon-calendar"></i>{{createdAt}}</span></li>
+                    </ul>
+
+                    <div class="row flex-items-xs-right">
+                        <a href="/editar-tarea/{{_id}}" class="text-right">Editar</a>
+                        <form action="/eliminar-tarea/{{_id}}?_method=DELETE" method="post">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" style="text-decoration:none;border:none;background:none;margin-top:10px;margin-right:30px;font-weight:bold;">
+                                Borrar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    {{/each}}
+</div>
+<!-- FIN SECCIÓN -->

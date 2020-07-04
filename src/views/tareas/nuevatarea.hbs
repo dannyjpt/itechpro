@@ -1,0 +1,84 @@
+ <div class="container-fluid">
+     <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" style="height:900px; ">
+         <div class="row col-xs-12">
+
+         </div>
+
+         <div class="row" style="height:50px;">
+
+         </div>
+
+         <div class="row col-xs-8">
+             <div class="col-md-12" mx-auto>
+
+                 <div class="card text-center">
+
+                     <div class="card-header">
+
+                         <h3>Nueva tarea</h3>
+
+                     </div>
+                     <div class="card-body">
+                         <form action="/tarea/crear" method="post">
+
+                             <div class="form-group">
+                                 <!-- Título -->
+                                 <input type="text" name="title" class="form-control" placeholder="Título" autofocus>
+
+                             </div>
+
+                             <div class="form-group">
+                                 <!-- Enlace de la imagen -->
+                                 <input type="text" name="image" class="form-control" placeholder="Imagen" autofocus>
+
+                             </div>
+
+
+                             <div class="form-group">
+                                
+                                 <!-- Descripción -->
+                                 <textarea name="description" class="form-control" id="idTextarea1" cols="20" rows="10" placeholder="Descripción" autofocus></textarea>
+                                 <script>
+                                     CKEDITOR.replace("idTextarea1");
+                                 </script>
+                             </div>
+
+                             <div class="form-group col-md-12" style="display:flex; flex-wrap:wrap;">
+                                 <!-- Tipo -->
+                                 <input type="text" name="typeT" class="form-control col-md-2" placeholder="tipo" autofocus>
+                                 
+                                 <!-- Enlace final de la imagen -->
+                                 <input type="text" name="link" class="form-control col-md-8" id="Clink_txt" placeholder="Enlace de la imagen" autofocus>
+                             
+                                 <!-- Botón para crear enlace de la imagen -->
+                                 <input type="buttom" class="btn btn-info btn-hover-green col-md-2" id="btnCLink" value="Generar Link" onclick="ChangeLink();" style="background:#FF5964; border:none;" required>
+
+
+                             </div>
+                             
+                            <div class="form-group col-md-12" style="display:flex; flex-wrap:wrap;">
+                                 <!-- Tipo -->
+                                 <input type="text" name="price" class="form-control col-md-2" placeholder="Precio" autofocus>
+                                 
+                                 <!-- Enlace final de la imagen -->
+                                 <input type="text" name="urlVideo" class="form-control col-md-10" placeholder="Url video" autofocus>
+                       
+                             </div>
+
+
+                             <div class="form-group">
+
+                                <!-- Botón para guardar -->
+                                 <button class="btn btn-info btn-block" style="background:#FF5964; border:none;"> Guardar</button>
+
+                             </div>
+
+                         </form>
+                     </div>
+
+                 </div>
+
+             </div>
+         </div>
+     </div>
+ </div>

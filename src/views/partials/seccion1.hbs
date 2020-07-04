@@ -1,0 +1,49 @@
+<!-- SECCIÓN 1 -->
+<div class="container-fluid">
+    <div class="backnight ">
+        <div class="nave" id="nave"><img src="/img/rocket2.png" alt=""></div>
+    </div>
+    <div class="row flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-3" style="background: #F3F8FB;">
+
+        <div class="row" style="float:left;">
+            <div class="col-xs-12">
+                <h1 style="color:white;">Actividades y Tutoriales</h1>
+                <h3 style="color:white;">Encuentra divertidas formas de aprender la programación</h3>
+            </div>
+            <div class="col-xs-12"></div>
+
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+
+            <section id="blog">
+                <div class="contenedor">
+
+                    {{#each actividades}}
+
+                        <article>
+                            <a href="/tarea/recurso/{{_id}}" style="background:white !important; padding:0;"><img src="{{image}}"></a>
+                            <a href="/tarea/recurso/{{_id}}" style="background:white !important; padding:0; color:black !important;">
+                                <h4>{{title}}</h4>
+                            </a>
+                            <div class="backhide">
+                                <p>{{{description}}}</p>
+                            </div>
+
+                        </article>
+
+                    {{/each}}
+
+                </div>
+            </section>
+
+
+            <br>
+            <center><a href="/tarea/mostrar/todo" class="lmc">Ver más</a></center>
+            <br>
+            <br>
+
+        </div><!-- /.container -->
+    </div>
+</div>
+<!-- FIN SECCIÓN -->

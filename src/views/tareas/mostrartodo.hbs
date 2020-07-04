@@ -1,0 +1,60 @@
+<div class="container-fluid">
+    <div style="height:400px; background-image: url(/img/recursos.jpg);background-size:100%;background-repeat:no-repeat;" class="row"></div>
+
+
+    <!-- Page Content -->
+
+
+    <section id="blog">
+        <h3>Actividades</h3>
+        <div class="contenedor">
+
+            {{#each actividades}}
+
+                <article>
+                    <img src="{{image}}">
+                    <h4>{{title}}</h4>
+                    <div class="backhide">
+                        <p>{{{description}}}</p>
+                    </div>
+                    <br>
+                    <a href="/tarea/recurso/{{_id}}">Ver {{typeT}}</a>
+                </article>
+
+            {{/each}}
+
+        </div>
+    </section>
+
+
+    <section id="blog">
+        <h3>Proyectos</h3>
+        <div class="contenedor">
+
+            {{#each muestraTareasIndex}}
+
+                <article>
+                    <img src="{{image}}">
+                    <h4>{{title}}</h4>
+                    <div class="backhide">
+                        <p>{{{description}}}</p>
+                    </div>
+                    <br>
+                    <a href="/tarea/recurso/{{_id}}">Ver {{typeT}}</a>
+                </article>
+
+            {{/each}}
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+
+</div><!-- /.container -->
+
+
+
+
+<!-- FIN SECCIÓN -->

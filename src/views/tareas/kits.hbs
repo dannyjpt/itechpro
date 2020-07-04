@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div style="height:400px; background-image: url(/img/kits.jpg);background-size:100%;background-repeat:no-repeat;" class="row"></div>
+
+
+
+    <h4><b>Disponibles solo en mercado libre en estos momentos</b></h4>
+    <br>
+
+    <br>
+    <br>
+
+    <div class="container mb-4">
+        <div class="row">
+            {{#each muestrakits}}
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <a href="#">
+                                <img class="card-img-top" src="{{image}}" alt="">
+                            </a>
+
+                            <a class="" href="{{urlVideo}}" target="_blank">
+                                <h4 class="card-title display-4">{{title}}</h4>
+                            </a>
+                            <p style="text-align:justify;">{{{description}}}</p>
+                            <h5>$ {{price}}</h5>
+                            <a class="btn btn-dark my-2 lmc" href="{{urlVideo}}" role="button" target="_blank">Comprar</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            {{/each}}
+
+        </div>
+    </div>
+
+</div>
+<br><br>

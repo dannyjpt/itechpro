@@ -1,0 +1,66 @@
+
+{{#if error}}
+
+
+    <div style="display:none;">
+        <input  type="text" id="txterror" value="{{error}}">
+    </div>
+    <script>
+        //alert($('#txtrut').val());
+        //toastr.warning('Warning, Info, Success, Error')
+        var error = $('#txterror').val();
+        
+
+        toastr.error('', error, {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "3000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        });
+    </script>
+
+
+{{/if}}
+
+{{#each errores}}
+
+
+    <div style="display:none;">
+        <input  type="text" id="txterror" value="{{text}}">
+    </div>
+    <script>
+        //alert($('#txtrut').val());
+        //toastr.warning('Warning, Info, Success, Error')
+        var error = $('#txterror').val();
+
+        toastr.error('', error, {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "3000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        });
+    </script>
+
+{{/each}}

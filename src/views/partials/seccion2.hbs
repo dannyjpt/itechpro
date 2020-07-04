@@ -1,0 +1,48 @@
+<!-- SECCIÓN 2 -->
+<div class="container-fluid">
+
+    <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2" style="width:100%;background:white;">
+
+        <div class="row" style="float:center;">
+            <div class="col-xs-12">
+                <h1 style="color:#002a43;">Proyectos Itechpro</h1>
+                <h3 style="color:#002a43;">Descubre asombrosos proyectos totalmente gratis</h3>
+            </div>
+            <div class="col-xs-12"></div>
+
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+
+            <section id="blog">
+                <div class="contenedor">
+
+                    {{#each muestraTareasIndex}}
+
+                        <article>
+                            <a href="/tarea/recurso/{{_id}}" style="background:white !important; padding:0;"><img src="{{image}}"></a>
+                             <a href="/tarea/recurso/{{_id}}" style="background:white !important; padding:0; color:black !important;"><h4>{{title}}</h4></a>
+                            <div class="backhide"><p >{{{description}}}</p></div>
+                        </article>
+
+                    {{/each}}
+
+                </div>
+            </section>
+
+
+
+            <center><a href="/tarea/mostrar/todo" class="lmc">Ver más</a></center>
+            <br>
+            <br>
+            <br>
+
+
+
+        </div><!-- /.container -->
+
+
+
+    </div>
+</div>
+<!-- FIN SECCIÓN -->

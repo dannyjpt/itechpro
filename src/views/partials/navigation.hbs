@@ -1,0 +1,60 @@
+<div class="container" style="position: absolute;width: 45%;margin-top: -10px; left: 50%;transform: translatex(-50%); display: flex;z-index:200;">
+
+    <a href="/"><img src="/img/logomenu.png" alt="" width="150px;"></a>
+
+    <div class="row" style="margin-top: 50px;">
+        {{#if indexMenu}}
+            <a data-scroll href="#sec-3" role="button" aria-pressed="true">Actividades</a>
+            <a data-scroll href="#sec-2" role="button" aria-pressed="true">Proyectos</a>
+            <a data-scroll href="/tarea/kits" role="button" aria-pressed="true">Kits</a>
+            <a data-scroll href="/blogs/mostrar-todos" role="button" aria-pressed="true">Blogs</a>
+            <!--<div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle bt_men" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Comunidad
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="editMenu">
+                <a href="/blogs/mostrar-todos" class="dropdown-item">Blogs</a>
+                <a href="#" class="dropdown-item">Noticias</a>
+            </div>
+        </div>-->
+        {{else}}
+            <a data-scroll href="/tarea/mostrar/todo" role="button" aria-pressed="true">Actividades</a>
+            <a data-scroll href="/tarea/mostrar/todo" role="button" aria-pressed="true">Proyectos</a>
+            <a data-scroll href="/tarea/kits" role="button" aria-pressed="true">Kits</a>
+            <a data-scroll href="/blogs/mostrar-todos" role="button" aria-pressed="true">Blogs</a>
+        {{/if}}
+    </div>
+
+</div>
+
+{{#if dataUser}}
+
+    <div style="position:absolute;width:25%;margin-left:73%;z-index:200;">
+
+
+        <div class="dropdown" style="float:right;margin-top:45px; margin-right:80px;">
+            <button class="btn btn-secondary dropdown-toggle bt_men" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgba(255,255,255,0.3) !important;padding:0px 5px !important;">
+                {{dataUser.name}}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                {{#if dataUser.roll}}
+                    <a href="/tarea/nuevo" class="dropdown-item">crear</a>
+                    <a href="/tarea/mostrar" class="dropdown-item">mostrar</a>
+                {{/if}}
+                <a href="/usuarios/cerrar-sesion" class="dropdown-item">Cerrar Sesion</a>
+            </div>
+        </div>
+
+    </div>
+
+{{else}}
+
+    <div style="position:absolute;width:25%;margin-left:73%;z-index:200;">
+
+
+        <div class="dropdown" style="float:right;margin-top:45px; margin-right:80px;">
+            <a href="/usuarios/inicio-sesion" class="dropdown-item" style="background-color: rgba(255,255,255,0.3) !important;padding:0px 5px !important;">Iniciar Sesion</a>
+        </div>
+
+    </div>
+{{/if}}

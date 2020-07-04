@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2" style="height:100vh; background-image: url(/img/back4.jpg);background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;">
+
+
+        <div class="row col-md-4"></div>
+        <div class="row col-md-4">
+
+            <div class="simple-login-container">
+                <form action="/usuarios/registrar" method="post">
+                    <h2>Registrarme</h2>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="text" name="user" class="form-control" placeholder="Nombre de Usuario" value="{{user}}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" value="{{email}}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="password" name="password" placeholder="Contraseña" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="password" name="password2" placeholder="Repetir Contraseña" class="form-control">
+                            <input type="hidden" name="typeU" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="submit" class="btn btn-block btn-login" placeholder="Enter your Password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="/usuarios/inicio-sesion">Iniciar Sesion</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        {{>elementos}}
+
+
+    </div>
+
+</div>

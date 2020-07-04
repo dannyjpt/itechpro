@@ -1,0 +1,43 @@
+<div class="container-fluid">
+     <div style="height:400px; background-image: url(/img/logo3d.jpg);background-size:100%;background-repeat:no-repeat;" class="row"></div>
+       
+        
+	
+	
+
+    <!-- Page Content -->
+    <div  class="container">
+
+    <section id="blog">
+			<div class="contenedor">
+	
+				{{#each muestrablogs}}
+
+                        <article>
+                            <img src="{{image}}">
+                            <h4>{{title}}</h4>
+                            <div class="backhide"><p >{{{description}}}</p></div>
+                          <br>
+                            <a href="/blogs/mostrar/{{_id}}">Leer más</a>
+                        </article>
+
+               {{/each}}
+				
+			</div>
+		</section>
+        
+   
+       <br>
+       <br>
+       <br>
+        <!-- /.container <center><a href="#" style="font-size:25px !important;">Ver más</a></center>-->
+        <br>
+        <br>
+
+
+</div><!-- /.container -->
+    <!-- /.container -->
+
+    <!--footer-->
+
+     </div>
